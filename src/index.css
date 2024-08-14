@@ -1,0 +1,267 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.homepage-content {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* padding: 10px 15px; */
+
+}
+
+.title {
+  font-size: 28px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* font-weight: 600; */
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 8px;
+}
+
+.city {
+  font-size: 28px;
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header svg {
+  color: whitesmoke;
+}
+
+.searchinput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchinput input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.searchinput button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchinput button:hover {
+  background-color: #0056b3;
+}
+
+.forcast {
+  color: whitesmoke;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.forecastdetails {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  gap: 10px;
+}
+
+.heading span:first-child {
+  font-size: 39px;
+}
+
+.inner-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.inner-details span {
+  font-size: 19px !important;
+}
+
+.content {
+  margin-top: 1.5rem;
+  color: whitesmoke;
+  font-size: 22px;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  gap: 5px
+}
+
+.recentsearches {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  box-sizing: border-box;
+  /* width: 100px; */
+  height: 50px;
+  cursor: pointer;
+}
+
+.fetch-recent-data span {
+
+  font-family: 'Montserrat', sans-serif;
+  color: aliceblue;
+  font-size: 22px;
+}
+
+.fetch-recent-data {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.slick-list {
+  padding: 0 !important;
+}
+
+
+
+.slider-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.recent-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: aliceblue;
+
+}
+
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .homepage-content {
+    padding: 9px 19px;
+    max-width: 100%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+
+  .title {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  .searchinput {
+    max-width: 100%;
+    padding: 11px;
+  }
+
+  .searchinput input,
+  .searchinput button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .city {
+    font-size: 19px;
+  }
+
+  .main-heading icon {
+    font-size: 19px;
+  }
+
+  .forcast {
+    flex-direction: column;
+
+    border-radius: 10px;
+  }
+
+  .forecastdetails {
+    margin-top: 2rem;
+
+  }
+
+  .weather-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .recentsearches {
+    width: 70px
+  }
+
+  .forcast span {
+    margin-bottom: 5px;
+  }
+}
